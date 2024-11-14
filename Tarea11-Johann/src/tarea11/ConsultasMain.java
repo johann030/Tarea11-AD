@@ -3,9 +3,11 @@ package tarea11;
 public class ConsultasMain {
 
 	public static void main(String[] args) {
+//		Menu menu = new Menu();
+//		menu.menu();
 
-		AccederBaseDatos abd = new AccederBaseDatos();
-		abd.crearAcceso();
+		ConectarBaseDatos abd = new ConectarBaseDatos();
+		abd.conexion();
 
 	}
 }
