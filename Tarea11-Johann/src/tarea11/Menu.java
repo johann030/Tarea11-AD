@@ -21,7 +21,8 @@ public class Menu {
 		int num = sc.nextInt();
 		switch (num) {
 		case 1: {
-			
+			cbd.conexion();
+			//TODO
 		}
 		case 2: {
 
