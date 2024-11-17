@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class InsertarAlumnos {
-	Alumnos alumno[] = new Alumnos[5];
+	Alumnos alumno[] = new Alumnos[1];
 	Scanner sc = new Scanner(System.in);
 
 	public Alumnos[] alumnos() {
@@ -20,7 +20,7 @@ public class InsertarAlumnos {
 			String apellidos = sc.nextLine();
 
 			System.out.println("Introduzca el genero del alumno: ");
-			char genero = sc.nextLine().charAt(0);
+			String genero = sc.nextLine();
 
 			System.out.println("Introduzca la fecha de nacimiento del alumno(yyyy-MM-dd): ");
 			LocalDate nacimiento = null;

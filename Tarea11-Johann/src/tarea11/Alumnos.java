@@ -1,18 +1,14 @@
 package tarea11;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Alumnos implements Serializable{
+public class Alumnos{
 
-	private static final long serialVersionUID = 3050553772541545039L;
-	
 	private int nia;
-	private String nombre, apellidos, ciclo, curso, grupo;
+	private String nombre, apellidos,genero, ciclo, curso, grupo;
 	private LocalDate nacimiento;
-	private char genero;
 
-	public Alumnos(int nia, String nombre, String apellidos, char genero, LocalDate nacimiento, String ciclo,
+	public Alumnos(int nia, String nombre, String apellidos, String genero, LocalDate nacimiento, String ciclo,
 			String curso, String grupo) {
 		this.nia = nia;
 		this.nombre = nombre;
@@ -75,11 +71,11 @@ public class Alumnos implements Serializable{
 		this.grupo = grupo;
 	}
 
-	public char getGenero() {
+	public String getGenero() {
 		return genero;
 	}
 
-	public void setGenero(char genero) {
+	public void setGenero(String genero) {
 		this.genero = genero;
 	}
 

@@ -1,3 +1,4 @@
+drop database if exists johann06;
 create database Johann06;
 use Johann06;
 create table alumno(
